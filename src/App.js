@@ -5,9 +5,7 @@ import './App.css';
 
 // Import components
 import Home from './components/Home/Home';
-import Learn from './components/Learn/Learn';
-import Practice from './components/Practice/Practice';
-import Profile from './components/Profile/Profile';
+import LandingPage from './components/LandingPage/LandingPage';
 
 // Styled Components for the minimalist design
 const AppContainer = styled.div`
@@ -23,10 +21,8 @@ function App() {
     <Router>
       <AppContainer className="App">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/learn" element={<Learn />} />
-          <Route path="/practice" element={<Practice />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/chat/:language" element={<Home />} />
         </Routes>
       </AppContainer>
     </Router>

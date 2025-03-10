@@ -40,11 +40,6 @@ button {
   transition: all 0.2s ease;
 }
 
-button:hover {
-  background-color: #632920;
-  color: #FFFFFF;
-}
-
 button:active {
   transform: scale(0.98);
 }
@@ -92,7 +87,7 @@ svg path {
 /* Hide header and footer when in drawing mode */
 .hidden {
   display: none;
-}
+} 
 
 /* Media queries */
 @media (max-width: 768px) {
@@ -106,3 +101,25 @@ svg path {
   }
 }
 
+.language-english .accessory {
+  bottom: 195px;
+  left: 203px;
+}
+
+.language-english .accessory img {
+  width: 150px;
+}
+
+.language-french .accessory {
+  bottom: 225px;
+  left: 190px;
+}
+
+.language-french .accessory img {
+  width: 150px;
+}
+
+.language-spanish .accessory {
+  bottom: 190px;
+  left: 100px;
+}
